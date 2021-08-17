@@ -21,7 +21,8 @@
     "pretest": "npm run build",
     "test": "aegir test",
     "test:node": "aegir test --target node",
-    "test:browser": "aegir test --target browser"
+    "test:browser": "aegir test --target browser",
+    "upstream": "git pull git@github.com:ChainSafe/js-libp2p-gossipsub.git"
   },
   "repository": {
     "type": "git",
