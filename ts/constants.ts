@@ -5,20 +5,20 @@ export const minute = 60 * second
 
 // Protocol identifiers
 
-export const FloodsubID = '/floodsub/1.0.0'
+export const FloodsubID = '/quorum/floodsub/1.0.0'
 
 /**
  * The protocol ID for version 1.0.0 of the Gossipsub protocol
  * It is advertised along with GossipsubIDv11 for backwards compatability
  */
-export const GossipsubIDv10 = '/meshsub/1.0.0'
+export const GossipsubIDv10 = '/quorum/meshsub/1.0.0'
 
 /**
  * The protocol ID for version 1.1.0 of the Gossipsub protocol
  * See the spec for details about how v1.1.0 compares to v1.0.0:
  * https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md
  */
-export const GossipsubIDv11 = '/meshsub/1.1.0'
+export const GossipsubIDv11 = '/quorum/meshsub/1.1.0'
 
 // Overlay parameters
 
