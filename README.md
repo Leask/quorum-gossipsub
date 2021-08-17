@@ -30,7 +30,7 @@ quorum-gossipsub
 ## Specs
 Gossipsub is an implementation of pubsub based on meshsub and floodsub. You can read the specification [here](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub).
 
-`libp2p-gossipsub` currently implements the [`v1.1`](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md) of the spec.
+`quorum-gossipsub` currently implements the [`v1.1`](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md) of the spec.
 
 ## Install
 
