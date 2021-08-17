@@ -1,14 +1,22 @@
-js-libp2p-gossipsub
-==================
+quorum-gossipsub
+================
 
 [![](https://img.shields.io/badge/made%20by-ChainSafe-blue.svg?style=flat-square)](https://chainsafe.io/)
 [![Travis CI](https://flat.badgen.net/travis/ChainSafe/gossipsub-js)](https://travis-ci.com/ChainSafe/gossipsub-js)
 ![ES Version](https://img.shields.io/badge/ES-2017-yellow)
 ![Node Version](https://img.shields.io/badge/node-10.x-green)
 
+## Original
+
+[js-libp2p-gossipsub](https://github.com/ChainSafe/js-libp2p-gossipsub)
+
 ## Lead Maintainer
 
 [Cayman Nava](https://github.com/wemeetagain)
+
+## Froked By
+
+[Leask Wong](https://github.com/Leask)
 
 ## Table of Contents
 
@@ -22,16 +30,16 @@ js-libp2p-gossipsub
 ## Specs
 Gossipsub is an implementation of pubsub based on meshsub and floodsub. You can read the specification [here](https://github.com/libp2p/specs/tree/master/pubsub/gossipsub).
 
-`libp2p-gossipsub` currently implements the [`v1.1`](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md) of the spec.
+`quorum-gossipsub` currently implements the [`v1.1`](https://github.com/libp2p/specs/blob/master/pubsub/gossipsub/gossipsub-v1.1.md) of the spec.
 
 ## Install
 
-`npm install libp2p-gossipsub`
+`npm install quorum-gossipsub`
 
 ## Usage
 
 ```javascript
-const Gossipsub = require('libp2p-gossipsub')
+const Gossipsub = require('quorum-gossipsub')
 
 const gsub = new Gossipsub(libp2p, options)
 
