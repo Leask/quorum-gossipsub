@@ -50,13 +50,13 @@
     "peer-id": "^0.15.2",
     "protobufjs": "^6.11.2",
     "time-cache": "^0.3.0",
-    "uint8arrays": "^2.1.10"
+    "uint8arrays": "^3.0.0"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.21",
-    "@types/mocha": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.29.2",
-    "@typescript-eslint/parser": "^4.29.2",
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^8.2.2",
+    "@typescript-eslint/eslint-plugin": "^3.0.2",
+    "@typescript-eslint/parser": "^3.0.2",
     "aegir": "^35.0.1",
     "benchmark": "^2.1.4",
     "buffer": "^6.0.3",
@@ -72,7 +72,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^4.1.0",
     "it-pair": "^1.0.0",
-    "libp2p": "next",
+    "libp2p": "^0.32.0",
     "libp2p-floodsub": "^0.27.0",
     "libp2p-interfaces-compliance-tests": "^1.0.1",
     "libp2p-mplex": "^0.10.4",
@@ -103,6 +103,7 @@
     "ChainSafe <superadmin@chainsafe.io>",
     "Patrick Michot <k0m0d0tr0n@gmail.com>",
     "Hugo Dias <hugomrdias@gmail.com>",
-    "Leask Wong <i@leaskh.com>"
+    "Leask Wong <i@leaskh.com>",
+    "Lion - dapplion <35266934+dapplion@users.noreply.github.com>"
   ]
 }
