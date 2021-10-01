@@ -29,7 +29,7 @@ export class Heartbeat {
 
     const timeout = setTimeout(() => {
       heartbeat()
-      this._heartbeatTimer!.runPeriodically(heartbeat, constants.GossipsubHeartbeatInterval)
+      this._heartbeatTimer!.runPeriodically(heartbeat, this.gossipsub._options.heartbeatInterval)
     }, constants.GossipsubHeartbeatInitialDelay)
 
     this._heartbeatTimer = {
@@ -69,7 +69,8 @@ export class Heartbeat {
       Dlo,
       Dhi,
       Dscore,
-      Dout
+      Dout,
+      fanoutTTL
     } = this.gossipsub._options
     this.gossipsub.heartbeatTicks++
 
@@ -257,7 +258,7 @@ export class Heartbeat {
         // now compute the median peer score in the mesh
         const peersList = Array.from(peers)
           .sort((a, b) => getScore(a) - getScore(b))
-        const medianIndex = peers.size / 2
+        const medianIndex = Math.floor(peers.size / 2)
         const medianScore = getScore(peersList[medianIndex])
 
         // if the median score is below the threshold, select a better peer (if any) and GRAFT
@@ -285,7 +286,7 @@ export class Heartbeat {
     // expire fanout for topics we haven't published to in a while
     const now = this.gossipsub._now()
     this.gossipsub.lastpub.forEach((lastpb, topic) => {
-      if ((lastpb + constants.GossipsubFanoutTTL) < now) {
+      if ((lastpb + fanoutTTL) < now) {
         this.gossipsub.fanout.delete(topic)
         this.gossipsub.lastpub.delete(topic)
       }
